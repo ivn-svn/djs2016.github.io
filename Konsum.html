@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Willkommen im Drive Projekt</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link href="css/Drive.css" type="text/css" rel="stylesheet"/>
+ 
+<!-- js -->
+<script src="JavaScript/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+       Journalismus und Daten 
+        </h1>
+
+</header><!-- /header -->
+<div id="wrapperDrive">
+<div id="drive">
+<a href="index.html">
+   <img src="images/drive.png"/>
+</a>
+    </div> 
+</div>
+</div>
+<!-- Hier schreibe ich DAS SIDEBAR CODE-->
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  <nav id="navbar">
+<label for="sidebartoggler" class="toggle">
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+</label>
+</nav>
+    
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Daten Geschichten</a></li>
+      <li><a href="Projekt.html">Das Projekt</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Kontakt.html">Schreiben Sie uns</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ENDE des SIDEBAR CODEs-->
+  <!--Anfang des "main" Teils-->
+  
+<div id="main">
+    <div id="content">
+        <section>
+            <div class="container" style="background:url('images/welt.png'); background-size: 80%; background-repeat: no-repeat;">
+                <h1>Schokoladen Konsum durch die Welt</h1>
+  	<author>by Svetlin Ivanov<author>
+<p>Too bad: In 2020 there will be no more chocolate! That’s what candy apocalyptists claim. Their concern is rooted in the increasing demand for cocoa beans in developing and emerging countries. At the same time, the size of arable farmland decreases worldwide because of climate change.</p><br/>
+
+<p>The coveted bean is mainly grown in Africa, where 77 percent of all cocoa beans worldwide are harvested. The Ivory Coast is the world market leader in cocoa production providing 40 percent of all beans. Without cocoa beans there would be no more chocolate as cocoa is its main ingredient.</p><br/>
+
+<p>
+The end of chocolate would be especially hard to deal with for Europeans. They consume almost half of all chocolate products worldwide (48 %). North and South Americans combined eat or drink only 33 percent of all chocolate products.</p><br/>
+
+
+
+        </section>
+<h1>Zu die original <a href="http://www.djs-summerschool.de/2014/coveted-cocoa-bean/" style="color:blue">Artikel von Svetlin Ivanov</a>.</h1>
+        <section class="color">
+            <div class="container"  style="background:url('images/impressum2.png'); background-size: 30%; background-repeat: no-repeat;">
+<div><center><iframe src="http://e.infogr.am/consumption-of-chocolate-by-continents-in-thousands-of-tonnes?src=embed" width="650" height="882" scrolling="no" frameborder="0" style="border:none;"></iframe></center>
+
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+<p><cetnter>Here is another interesting graph this time on cocoa harvests.</center></p>
+<center><iframe src="http://e.infogr.am/prices-of-cocoa-harvests?src=embed" width="663" height="663" scrolling="no" frameborder="0" style="border:none;"></iframe><br/>
+</center>
+            </div>
+        </section>
+       
+    <section class="color">
+<footer>
+ <div class="footer"><p>© Svetlin Ivanov</p>
+Bilder, Text, Logo und Artikel sind ausschlieslich Eigentum des Authors.<br>
+Open Source Java Script und CSS code wird benutzt nur für die Page Layout.
+<br> Alle andere Einzelheiten sind auch Werk des Autors.     
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="Folgen"><a href="http://www.twitter.com/FjmcDrive"><img src="images/twitter.png" style="width: 100px; height: 100px;">Folgen Sie uns auf Twitter</a></span>
+     </div>
+</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

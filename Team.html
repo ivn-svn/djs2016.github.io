@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Willkommen im Drive Projekt</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link href="css/Drive.css" type="text/css" rel="stylesheet"/>
+ 
+<!-- js -->
+<script src="JavaScript/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+      Team
+        </h1>
+
+</header><!-- /header -->
+<div id="wrapperDrive">
+<div id="drive">
+<a href="index.html">
+   <img src="images/drive.png"/>
+</a>
+    </div> 
+</div>
+</div>
+<!-- Hier schreibe ich DAS SIDEBAR CODE-->
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  <nav id="navbar">
+<label for="sidebartoggler" class="toggle">
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+</label>
+</nav>
+    
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Daten Geschichten</a></li>
+      <li><a href="Projekt.html">Das Projekt</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Kontakt.html">Schreiben Sie uns</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ENDE des SIDEBAR CODEs  style="background:url('images/background.png');"-->
+  <!--Anfang des "main" Teils-->
+<div id="main" style="background:url('images/werbinich.png'); background-size: 100%;">
+    <div id="content"> 
+        <section>
+            <div class="container" style="min-height: 300px;">
+  <h1><center><h1>Wer bin ich und wer sind wir?</h1></b></p></center></h1>
+            </div>
+</div>
+</div>
+
+ <section class="color">
+            <div class="container">
+        <section>
+            <div class="container">
+              
+<br><br><br>
+<p>
+Ich bin <b>Svetlin Ivanov</b>. Ich studiere Journalismus und interesiere mich für Design. Seit einige Jahre bin ich sehr begeistert von dem Begriff "Daten Journalismus" und wollte ich seit langer Zeit ein eigenes Projekt vorstellen. Als Ideenfindung hatte ich das beeindruckende deutsches Projekt <a href="https://opendatacity.de/"><b>Open Data City</b></a> Jetzt habe ich eine eigene Webseite entwickelt trotz alle schwierigkeiten und Lücke nicht nur in meine Sprachkentnis, sondern auch in meine Web-wissen. Aber dafür bin ich hier. Schritt für schritt, geht es jeden Tag besser! 
+<br/></br>
+Um die Ziele meines Projekts zu erreichen, ich suche nach <b>einem Team</b>. Ich brauche leute, die mit mir arbeiten wollen um diese Webseite mit Nachrichten und Visuelle Geschichten jede Woche zu aktualisieren. 
+<br/><br/>
+Dafür erforderlich ist, dass ich jemand bei mir habe, der gute Kentnisse von Komputersprachen hat. Dasheißt, Drive Projekt sucht nach mehr <b>Programmierer</b>, der kann am Anfang zusammen als freiwilliger mitarbeiten sodass wir kunftig, hoffentlich, an Bestellungen von großen Medien Unternehmen arbeiten können. Falls Sie dabei sind, melden Sie mich an <a href="Kontakt.html"><b><u>hier</u></b></a>
+ </p>
+            </div>
+        </section>
+ <section>
+
+<div id="main">
+    <div id="container"> 
+
+<center>
+              <img src="images/qr.png"  height="400px" width="400px">
+</center>
+         
+        </section>
+   </div>
+    <section class="color">
+<footer>
+ <div class="footer"><p>© Svetlin Ivanov</p>
+Bilder, Text, Logo und Artikel sind ausschlieslich Eigentum des Authors.<br>
+Open Source Java Script und CSS code wird benutzt nur für die Page Layout.
+<br> Alle andere Einzelheiten sind auch Werk des Autors.     
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="Folgen"><a href="http://www.twitter.com/FjmcDrive"><img src="images/twitter.png" style="width: 100px; height: 100px;">Folgen Sie uns auf Twitter</a></span>
+     </div>
+</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

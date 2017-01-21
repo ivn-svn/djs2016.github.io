@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Willkommen im Drive Projekt</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link href="css/Drive.css" type="text/css" rel="stylesheet"/>
+ 
+<!-- js -->
+<script src="JavaScript/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+      Daten Geschichten
+        </h1>
+
+</header><!-- /header -->
+<div id="wrapperDrive">
+<div id="drive">
+<a href="index.html">
+   <img src="images/drive.png"/>
+</a>
+    </div> 
+</div>
+</div>
+<!-- Hier schreibe ich DAS SIDEBAR CODE-->
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  <nav id="navbar">
+<label for="sidebartoggler" class="toggle">
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+</label>
+</nav>
+    
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Daten Geschichten</a></li>
+      <li><a href="Projekt.html">Das Projekt</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Kontakt.html">Schreiben Sie uns</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ENDE des SIDEBAR CODEs-->
+  <!--Anfang des "main" Teils-->
+  
+<div id="main">
+    <div id="content">
+        <section>
+            <div class="container">
+                <h1>Eine 3D Druckerei in der 3-ten Welt</h1>
+  	<author>by Svetlin Ivanov<author>
+        </section>
+        <section class="color">
+            <div class="container"><p>In order to find out how technology is improving development in Indonesia, Sventlin gains insight into the work taking place at a 3D-printing factory in Jakarta. There he speaks to Wadi Chan, a 30-year enterpeneur and CEO of the printing company which produce a range of items, from lampshades, to helmets, to components for Aerospace engineering projects.</p>
+            </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+<center> 
+<iframe src="https://player.vimeo.com/video/113870307" width="500" height="332" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</center>
+
+            </div>
+        </section>
+       
+    <section class="color">
+<footer>
+ <div class="footer"><p>© Svetlin Ivanov</p>
+Bilder, Text, Logo und Artikel sind ausschlieslich Eigentum des Authors.<br>
+Open Source Java Script und CSS code wird benutzt nur für die Page Layout.
+<br> Alle andere Einzelheiten sind auch Werk des Autors.     
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="Folgen"><a href="http://www.twitter.com/FjmcDrive"><img src="images/twitter.png" style="width: 100px; height: 100px;">Folgen Sie uns auf Twitter</a></span>
+     </div>
+</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

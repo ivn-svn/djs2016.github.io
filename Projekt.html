@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Willkommen im Drive Projekt</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+ 
+<!-- js -->
+<script src="JavaScript/classie.js"></script>
+<!-- es wurde mir leichter, wenn dieses Teil des Java Script code die die minimisierung des Header Details steuert hier als inline code verfügbar ist-->
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+       Journalismus und Daten 
+        </h1>
+
+</header><!-- /header -->
+<div id="wrapperDrive">
+<div id="drive">
+<a href="index.html">
+   <img src="images/drive.png"/>
+</a>
+    </div> 
+</div>
+</div>
+<!-- Hier schreibe ich DAS SIDEBAR CODE-->
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  <nav id="navbar">
+<label for="sidebartoggler" class="toggle">
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+</label>
+</nav>
+    
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Daten Geschichten</a></li>
+      <li><a href="Projekt.html">Das Projekt</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Kontakt.html">Schreiben Sie uns</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ENDE des SIDEBAR CODEs-->
+  <!--Anfang des "main" Teils-->
+<div id="main">
+    <div id="content">
+        <section>
+            <div class="container">
+                <h1>Über den Begrif  "Data-Driven Journalism"</h1>
+               <p>
+Drive ist ein Projekt von journalismus Student Svetlin Ivanov. Das Ziel ist durch die nutzung der neuen online cloud-Platformen für Datenvisualisierung ein neuer Art Geschichte zu erzählen. Die Hauptsache ist, dass was wichtig ist, immer besser und schneller wahrzunehmen verfügbar sei kann.  
+</p>
+<br>
+<quote><p>"Als Vorläufer der Idee des Datenjournalismus werden Adrian Holovatys Vorschläge zur Umgestaltung des klassischen Journalismus für das Medium Internet betrachtet. Dazu dürften nicht nur klassische Zeitungsgeschichten auf neuen Geräten angezeigt werden, auch die Information selbst müsse sich ändern. Die Zielsetzung bei dieser anderen Art von Journalismus müsse es sein, “important, focused information that is useful to people’s lives and helps them understand the world” (deutsch: „wichtige, konzentrierte Information, die für das Leben der Menschen nützlich ist und ihnen hilft, die Welt zu verstehen“) zu liefern", lautet auch Wikipedia.
+<br>
+<p>Es ist sobald Weltweit anerkannt, dass der Begrifft stammt von England ab. 6 Jahre vor die Englische "Guardian" war die erste online Ausgabe die Daten Journalistischen Werkzeuge benutzt hat.</p>  
+<br>
+<p>Als Durchbruch des Datenjournalismus gelten die Veröffentlichung des Kriegstagebuchs des Afghanistan-Krieges und des Kriegstagebuchs des Irak-Krieges durch WikiLeaks sowie deren Aufbereitung durch The Guardian und The New York Times. Das ebenfalls mit diesen Fällen befasste Onlinemagazin Spiegel Online wird als im Einsatz von Datenjournalismus weniger erfolgreich bewertet.</p>
+<br>
+<p>
+Den Datenjournalismus im Sinne von „Zugänglichmachen von gewaltigen Datenmengen durch Navigationshilfen und Visualisierung“ verstehen seine Befürworter als Gegensatz zur auf Personalisierung zielenden klassischen Berichterstattung. Da er dieser die Elemente der Nützlichkeit, des vorhandenen Publikumsbedürfnisses, der Relevanz und der Spannung voraus habe, sei er „die Zukunft des Politikjournalismus“.
+<b>Quelle: Wikipedia<b>
+</p>
+</quote>
+            </div>
+        </section>
+        <section class="color">
+
+        <section class="color">
+            <div class="container">
+                <h1>Die Geschichte</h1>
+                <br>
+<quote><p><p>Den Begriff <b>Data Driven Journalism</b> für die Kombination aus Recherche-Ansatz und neuer Veröffentlichungsform prägte die englische Tageszeitung The Guardian im März 2009 und nahm damit eine Vorreiterrolle in diesem Bereich ein. Im Data Store der Zeitung werden maschinenlesbare Informationen per Software miteinander verknüpft und analysiert. Das Ergebnis dient als Basis für interaktive Visualisierungen. Diese Visualisierungen werden mit dem Datensatz und Erläuterungen zum Kontext publiziert sowie mit Text, Audio oder Video kommentiert. In Deutschland machte M – Menschen Machen Medien, eine Fachzeitschrift der Gewerkschaft ver.di, im März 2010 durch ein Titelthema zu DDJ den Begriff Datenjournalismus bekannt.
+</p>
+</quote>
+</section>
+
+<footer>
+ <div class="footer"><p>© Svetlin Ivanov</p>
+Bilder, Text, Logo und Artikel sind ausschlieslich Eigentum des Authors.<br>
+Open Source Java Script und CSS code wird benutzt nur für die Page Layout.
+<br> Alle andere Einzelheiten sind auch Werk des Autors.     
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="Folgen"><a href="http://www.twitter.com/FjmcDrive"><img src="images/twitter.png" style="width: 100px; height: 100px;">Folgen Sie uns auf Twitter</a></span>
+     </div>
+</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

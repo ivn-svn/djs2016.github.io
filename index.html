@@ -1,0 +1,188 @@
+<!-- Alle Bilder und Grafiken hier habe ich selbst gemacht. Die logos und Grafiken die hier verfügbar sind und die nicht pixel für pixel und Schritt für Schritt selbst gemacht habe, sind mit die Online Werkzeug www.canva.com dargestellt und sind für offentliche benutzung veröffentlicht-->
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<title>Willkommen im Drive Projekt</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="" />
+
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/style.css" />
+<link href="css/Drive.css" type="text/css" rel="stylesheet"/>
+ 
+<!-- js -->
+<script src="JavaScript/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+        <h1 id="logo">
+       Data-Driven Journalism
+        </h1>
+
+</header><!-- /header -->
+<div id="wrapperDrive">
+<div id="drive">
+<a href="index.html">
+   <img src="images/drive.png"/>
+</a>
+    </div> 
+</div>
+</div>
+<!-- Hier schreibe ich DAS SIDEBAR CODE-->
+
+<input type="checkbox" id="sidebartoggler" name="" value="">
+
+<div class="page-wrap">
+  <nav id="navbar">
+<label for="sidebartoggler" class="toggle">
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+<div class="hamb">
+</div>
+</label>
+</nav>
+    
+  <div class="sidebar">
+    <ul>
+      <li><a href="index.html">Daten Geschichten</a></li>
+      <li><a href="Projekt.html">Das Projekt</a></li>
+      <li><a href="Team.html">Team</a></li>
+      <li><a href="Kontakt.html">Schreiben Sie uns</a></li>
+      <li><a href="impressum.html">Impressum</a></li>
+    </ul>
+  </div>
+
+</div>
+
+<!-- ENDE des SIDEBAR CODEs-->
+  <!--Anfang des "main" Teils-->
+<div id="main" style="background:url('images/background.png'); background-size: 70%">
+    <div id="content"> 
+        <section>
+            <div class="container">
+
+                <h1><center><h1>Drive erzählt visuelle Geschichten.</h1></b></p></center></h1>
+<br><br><br>
+               <p>
+Manchmal es ist gar nicht schwierig die Daten zu erreichen. Zahlreiche Quellen verofentlichen jede Menge Daten Online. Im solchen Fälle, die Hauptsache ist einfach die wichtige von die nicht bedeutende Daten auszusieben.   
+</p>
+  <p>
+Das echte Problem erscheint aber, wenn Mann echt interesante Daten zugreifen will. Dann muss Mann sich vorbereiten um sich gegen der Statt selbst zu kämpfen. Das ist genau den Fall, wenn Mann zum beispiel nach ankunft über die Bewegung der Alliierte Kräfte in Afghanistan fragt. Vielleicht ist es kein Zufall, dass ein modernes Sprichwort lautet, dass die Daten das neue Öl sind. Dassheißt, das gute Verständis der großen Datenmengen wird bald ein wichtiges Resource sein. 
+</p>
+  <p>
+Von Schokoladenkonsum bis zum Ölkonsum, im jeden Datensatz versteckt sich zumindest eine Geschichte die wartet um erzählt zu werden. Hier sind ein Paar solche Data-stories.
+</p>
+</quote>
+            </div>
+</div>
+</div>
+        </section>
+
+
+        <section class="color" style="background:url('images/gridbackground.png'); background-size: 50%;">
+            <div class="container">
+              <!-- 
+ich will auch ein Foto Grid https://www.youtube.com/watch?v=stucKrWheVM&list=PLyA-HUCKaq14LJkWczL7ASRG4oGeHe07d-->
+<center>
+<br><br>
+ <table width="960px" height="600px">
+    <td><p></td>
+      <tr>
+        <td>
+        <div id="bilderliste">
+<a href="Bgkarte.html"><img class="top" src="images/Medien2.png" />
+<img class="bottom" src="images/Medien.png"/>
+</div>
+</td>
+<td>
+<div id="bilderliste">
+<a href="Konsum.html"><img class="top" src="images/Konsum2.png"/>
+<img class="bottom" src="images/Konsum.png"/>
+</div></td>
+ <td>
+ <div id="bilderliste">
+<a href="3dprint.html"><img class="top" src="images/Druckerei2.png"/>
+<img class="bottom" src="images/Druckerei.png"/>  
+</div>
+</tr>
+        <td>
+        <div id="bilderliste">
+ 		<a href="Stuck.html"><img class="top" src="images/Stuck2.png"/>
+ 		<img class="bottom" src="images/Stuck.png"/>
+ 		</div>
+ 		</td>
+        <td>
+        <div id="bilderliste">
+		<a href="Indonesia.html"><img class="top" src="images/Zugang2.png"/>
+ 		<img class="bottom" src="images/Zugang.png"/>
+ 		</div>
+ 		</td>
+        <td>
+        <div id="bilderliste">
+ 		<a href="Immo.html"><img class="top" src="images/Immo2.png"/>
+ 		<img class="bottom" src="images/Immo.png"/>
+ 		</div>
+ 		</td>
+    </tr>
+    </table>
+  
+
+</div>	
+</section>
+
+</center>
+</quote>
+<div id="main" style="background:url('images/footerup.png'); background-size: 100%; background-repeat: no-repeat;">
+    <div id="content"> 
+        <section>
+            <div class="container">
+
+                
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+              
+            </div>
+</div>
+</div>
+</section>
+
+<footer>
+ <div class="footer"><p>© Svetlin Ivanov</p>
+Bilder, Text, Logo und Artikel sind ausschlieslich Eigentum des Authors.<br>
+Open Source Java Script und CSS code wird benutzt nur für die Page Layout.
+<br> Alle andere Einzelheiten sind auch Werk des Autors.     
+<div id="info-bar">
+    <div class="container clearfix">
+        <span class="Folgen"><a href="http://www.twitter.com/FjmcDrive"><img src="images/twitter.png" style="width: 100px; height: 100px;">Folgen Sie uns auf Twitter</a></span>
+     </div>
+</div>
+  </div>
+</footer>
+</div>
+</body>
+</html>

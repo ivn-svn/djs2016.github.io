@@ -1,0 +1,319 @@
+@media screen and (max-width: 481px){
+#main #subnav 
+float: left;
+padding: 0;
+width: 94%;
+margin: 3%;
+}
+
+body {
+  size: 100%;
+   width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display:inline-block;
+    position: fixed;
+    width:absolute;
+    height: absolute;
+    padding: 0;
+    margin: 0;
+	font:400 12px/1.625 "Ubuntu", Ubuntu, Ubuntu, sans-serif;
+	color:#444;
+	background-image:linear-gradient(left , #ffffff 0%, #ffffff 52%, #ffffff 100%);
+	background-image:-moz-linear-gradient(left , #ffffff 0%, #ffffff 52%, #ffffff 100%);
+	background-image:-webkit-linear-gradient(left , #ffffff 0%, #ffffff 52%, #ffffff 100%);
+}
+
+/* Bilder Liste Sachen */
+
+#bilderliste
+{
+  display: inline-block;
+font-size: 0;
+
+height: 100%;
+width: 100%;
+position:relative;
+}
+
+#bilderliste a {
+
+display: inline-block;
+}
+
+#bilderliste a:hover {
+    border-color:white;
+}
+
+#table {
+width: auto;
+display:table;
+table-layout: fixed;
+}
+
+#bilderliste img {
+ 	margin: -60px;
+padding: -60px;
+  position:absolute;
+   width: absolute;
+   padding-bottom: absolute;
+   display: block;
+
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+    #bilderliste img.bottom:hover {
+        opacity:0;
+    }
+/* Das war ziemlich schwierig, weil ich ein paar Fotos übereinander schichten sollte und das Hauptproblem war diese mit dem Layout anzupassen ohne die Verlauf Effekte zu schaden. Jede Änderung der Seite Struktur wirkte auf der Bilderliste*/
+
+/*
+Tutorial hier: http://www.onextrapixel.com
+AutHor: http://www.toddmotto.com
+
+https://www.youtube.com/watch?v=stucKrWheVM&index=1&list=PLyA-HUCKaq14LJkWczL7ASRG4oGeHe07d
+*/
+
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
+
+.wrapper {
+	max-width:500px;
+	width:95%;
+	margin:0 auto;
+	position:relative;
+
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea,
+#contact-form button[type="submit"] {
+	font:400 12px/12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#contact-form {
+	text-shadow:0 1px 0 #999;
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	background:#597ab5;
+	padding:25px;
+}
+#contact-form h3 {
+	color:#fff;
+	display:block;
+	font-size:28px;
+}
+#contact-form h4 {
+	margin:5px 0 15px;
+	display:block;
+	font-size:13px;
+}
+#contact-form label span {
+	cursor:pointer;
+	color:#fff;
+	display:block;
+	margin:5px 0;
+	font-weight:900;
+}
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form input[type="url"],
+#contact-form textarea {
+	width:100%;
+	box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-webkit-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	-moz-box-shadow:inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+	border:1px solid #CCC;
+	background:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form input[type="text"]:hover,
+#contact-form input[type="email"]:hover,
+#contact-form input[type="tel"]:hover,
+#contact-form input[type="url"]:hover,
+#contact-form textarea:hover {
+	-webkit-transition:border-color 0.3s ease-in-out;
+	-moz-transition:border-color 0.3s ease-in-out;
+	transition:border-color 0.3s ease-in-out;
+	border:1px solid #AAA;
+}
+#contact-form textarea {
+	height:100px;
+	max-width:100%;
+}
+#contact-form button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background:#597ab5;
+	background-image:linear-gradient(bottom, #597ab5 0%, #597ab5 52%);
+	background-image:-moz-linear-gradient(bottom, #597ab5 0%, #597ab5 52%);
+	background-image:-webkit-linear-gradient(bottom, #597ab5 0%, #597ab5 52%);
+	color:#FFF;
+	margin:0 0 5px;
+	padding:10px;
+	border-radius:5px;
+}
+#contact-form button[type="submit"]:hover {
+	background-image:linear-gradient(bottom, #dfc469 0%, #dfc469 52%);
+	background-image:-moz-linear-gradient(bottom, #dfc469 0%, #dfc469 52%);
+	background-image:-webkit-linear-gradient(bottom, #dfc469 0%, #dfc469 52%);
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+#contact-form button[type="submit"]:active {
+	box-shadow:inset 0 1px 3px rgba(0,0,0,0.5);
+}
+#contact-form input:focus,
+#contact-form textarea:focus {
+	outline:0;
+	border:1px solid #999;
+}
+::-webkit-input-placeholder {
+    color:#888;
+}
+:-moz-placeholder {
+    color:#888;
+}
+::-moz-placeholder {
+    color:#888;
+}
+:-ms-input-placeholder {
+    color:#888;
+}
+
+
+/*Hier nutze ich ich das Footer class*/
+
+
+#footer {
+    background-color:#597ab5;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding: 90px; 
+    margin: 0 auto;
+}
+
+<!--Anfang des alten Headers hier-->
+
+header {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #0683c9;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+header h1#logo {
+    display: inline-block;
+    height: 150px;
+    line-height: 150px;
+    float: left;
+    font-family: "Oswald", sans-serif;
+    font-size: 60px;
+    color: white;
+    font-weight: 400;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav {
+    display: inline-block;
+    float: right;
+}
+header nav a {
+    line-height: 150px;
+    margin-left: 20px;
+    color: #9fdbfc;
+    font-weight: 700;
+    font-size: 18px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+header nav a:hover {
+    color: white;
+}
+header.smaller {
+    height: 75px;
+}
+header.smaller h1#logo {
+    width: 150px;
+    height: 75px;
+    line-height: 75px;
+    font-size: 30px;
+}
+header.smaller nav a {
+    line-height: 75px;
+}
+
+@media all and (max-width: 660px) {
+    header h1#logo {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+    }
+    header nav {
+        display: block;
+        float: none;
+        height: 50px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    header nav a {
+        line-height: 50px;
+        margin: 0 10px;
+    }
+    header.smaller {
+        height: 75px;
+    }
+    header.smaller h1#logo {
+        height: 40px;
+        line-height: 40px;
+        font-size: 30px;
+    }
+    header.smaller nav {
+        height: 35px;
+    }
+    header.smaller nav a {
+        line-height: 35px;
+    }
+}
+<!--Header Endung hier-->
+
+ html { overflow-y: scroll; overflow-x:hidden; }
+body { position: absolute; }	
