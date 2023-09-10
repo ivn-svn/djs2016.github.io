@@ -12,7 +12,37 @@
 <link href='http://fonts.googleapis.com/css?family=Aileron:400,300,700' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="css/style.css" />
 <link href="css/Drive.css" type="text/css" rel="stylesheet"/>
- 
+ <style>
+  /* Add this CSS to your existing styles */
+.image-row a {
+    flex-basis: calc(33.33% - 10px); /* Distribute images equally and add spacing */
+    margin: 5px; /* Add spacing between images */
+    text-align: center; /* Center the images horizontally */
+    position: relative; /* Position for text overlay */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    background-size: cover; /* Ensure the background image covers the entire anchor element */
+    transition: background-image 0.3s; /* Add a transition for the background image change */
+}
+
+.image-row a:hover {
+    /* Change the background image on hover */
+    background-image: url('images/Immo2.png'); /* Example: use the hovered image */
+}
+
+.image-row .image-text {
+    position: absolute;
+    top: 50%; /* Position the text in the middle */
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text vertically and horizontally */
+    opacity: 0; /* Initially hide the text */
+    transition: opacity 0.3s; /* Add a transition for the text fade-in effect */
+}
+
+.image-row a:hover .image-text {
+    opacity: 1; /* Show the text on hover */
+}
+
+ </style>
 <!-- js -->
 <script src="JavaScript/classie.js"></script>
 <script>
@@ -67,7 +97,7 @@
 </div>
 </label>
 </nav>
-    
+<div></div>
   <div class="sidebar">
     <ul>
       <li><a href="index.html">Daten Geschichten</a></li>
@@ -77,7 +107,6 @@
       <li><a href="impressum.html">Impressum</a></li>
     </ul>
   </div>
-
 </div>
 
 <!-- ENDE des SIDEBAR CODEs-->
@@ -104,57 +133,57 @@ Von Schokoladenkonsum bis zum Ölkonsum, im jeden Datensatz versteckt sich zumin
 </div>
         </section>
 
-
         <section class="color" style="background:url('images/gridbackground.png'); background-size: 50%;">
-            <div class="container">
-              <!-- 
+          <div class="container">
+            <!-- 
 ich will auch ein Foto Grid https://www.youtube.com/watch?v=stucKrWheVM&list=PLyA-HUCKaq14LJkWczL7ASRG4oGeHe07d-->
 <center>
 <br><br>
- <table width="960px" height="600px">
-    <td><p></td>
-      <tr>
-        <td>
-        <div id="bilderliste">
-<a href="Bgkarte.html"><img class="top" src="images/Medien2.png" />
-<img class="bottom" src="images/Medien.png"/>
-</div>
-</td>
+<table width="100%;" height="600px" cellspacing="0" cellpadding="0">
+  <tbody><tr><td><p></p></td>
+    </tr><tr>
+      <td>
+      <div id="bilderliste">
+<a href="Bgkarte.html"><img class="top" src="images/Medien2.png">
+<img class="bottom" src="images/Medien.png">
+</a></div><a href="Bgkarte.html">
+</a></td>
 <td>
 <div id="bilderliste">
-<a href="Konsum.html"><img class="top" src="images/Konsum2.png"/>
-<img class="bottom" src="images/Konsum.png"/>
-</div></td>
- <td>
- <div id="bilderliste">
-<a href="3dprint.html"><img class="top" src="images/Druckerei2.png"/>
-<img class="bottom" src="images/Druckerei.png"/>  
-</div>
-</tr>
-        <td>
-        <div id="bilderliste">
- 		<a href="Stuck.html"><img class="top" src="images/Stuck2.png"/>
- 		<img class="bottom" src="images/Stuck.png"/>
- 		</div>
- 		</td>
-        <td>
-        <div id="bilderliste">
-		<a href="Indonesia.html"><img class="top" src="images/Zugang2.png"/>
- 		<img class="bottom" src="images/Zugang.png"/>
- 		</div>
- 		</td>
-        <td>
-        <div id="bilderliste">
- 		<a href="Immo.html"><img class="top" src="images/Immo2.png"/>
- 		<img class="bottom" src="images/Immo.png"/>
- 		</div>
- 		</td>
-    </tr>
-    </table>
-  
+<a href="Konsum.html"><img class="top" src="images/Konsum2.png">
+<img class="bottom" src="images/Konsum.png">
+</a></div></td>
+<td>
+<div id="bilderliste">
+<a href="3dprint.html"><img class="top" src="images/Druckerei2.png">
+<img class="bottom" src="images/Druckerei.png">  
+</a></div><a href="3dprint.html">
+</a></td></tr>
+      <tr><td>
+      <div id="bilderliste">
+   <a href="Stuck.html"><img class="top" src="images/Stuck2.png">
+   <img class="bottom" src="images/Stuck.png">
+   </a></div><a href="Stuck.html">
+   </a></td>
+      <td>
+      <div id="bilderliste">
+  <a href="Indonesia.html"><img class="top" src="images/Zugang2.png">
+   <img class="bottom" src="images/Zugang.png">
+   </a></div><a href="Indonesia.html">
+   </a></td>
+      <td>
+      <div id="bilderliste">
+   <a href="Immo.html"><img class="top" src="images/Immo2.png">
+   <img class="bottom" src="images/Immo.png">
+   </a></div><a href="Immo.html">
+   </a></td>
+  </tr>
+  </tbody></table>
 
-</div>	
+
+</center></div>	
 </section>
+      
 
 </center>
 </quote>
